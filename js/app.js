@@ -54,3 +54,19 @@ const calculateSide = (sideA, sideB)=>{
 }
 
 console.log(calculateSide(8,6));
+
+// SUM ARRAY
+const sumArray = (arr)=>{
+    sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] == 'number') {
+            sum += arr[i];
+        }
+        else {
+            return 'Invalid data types!';
+        }
+    }
+    return sum;
+}
+
+console.log(sumArray(['n',2,4,5,3]));
