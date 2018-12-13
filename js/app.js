@@ -33,3 +33,16 @@ var checkPalindrome = function (str) {
 }
 
 checkPalindrome('rader');
+
+// DIGIT SUM
+const sumDigits = (num)=>{
+    let num_arr = num.toString().split('');
+    sum = 0;
+    for (let i = 0; i < num_arr.length; i++) {
+        
+        sum += parseInt(num_arr[i]);
+    }
+    return sum;
+}
+
+console.log(sumDigits(612));
