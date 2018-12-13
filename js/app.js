@@ -46,3 +46,11 @@ const sumDigits = (num)=>{
 }
 
 console.log(sumDigits(612));
+
+// PYTHAGORAS
+const calculateSide = (sideA, sideB)=>{
+    let sideC = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+    return sideC;
+}
+
+console.log(calculateSide(8,6));
