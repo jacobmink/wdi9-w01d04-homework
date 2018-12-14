@@ -70,3 +70,33 @@ const sumArray = (arr)=>{
 }
 
 console.log(sumArray(['n',2,4,5,3]));
+
+// PRIME NUMBERS
+// Step One
+const checkPrimes = (num)=>{
+    let x = 0;
+    for (let i = 2; i < Math.sqrt(num) + 1; i++) {
+        if (num % i == 0) {
+            x += 1;
+        }
+    }
+    if (x == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+checkPrimes(47);
+
+// Step Two
+const printPrimes = (num)=>{
+    for (let i = 1; i < num + 1; i++) {
+        if (checkPrimes(i)) {
+            console.log(i);
+        }
+    }
+}
+
+printPrimes(97);
